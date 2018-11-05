@@ -16,4 +16,4 @@ build: download
 	make -C build/wireguard/src
 
 install:
-	make install
+	make -C build/wireguard/src install
