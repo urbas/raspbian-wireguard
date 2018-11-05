@@ -4,9 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Hello world 2"
-                sh "wget https://git.zx2c4.com/WireGuard/snapshot/WireGuard-0.0.20181018.tar.xz"
-                sh "ls -la"
+                sh "make clean build"
             }
         }
         stage('Test') {
